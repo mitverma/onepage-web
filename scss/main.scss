@@ -28,6 +28,11 @@ header {
     }
 }
 
+.banner {
+    background-image: url('../assets/banner.jpg');
+    background-color: contain;
+}
+
 section {
     background-color: #fff;
     &.banner {
