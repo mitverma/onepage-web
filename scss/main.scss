@@ -1,10 +1,12 @@
 @import './normalize.css';
 @import '../vendors/bootstrap/bootstrap.min.css';
-@import url(https://fonts.googleapis.com/css?family=Maven+Pro&display=swap);
+// @import url(https://fonts.googleapis.com/css?family=Maven+Pro&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Poppins&display=swap);
 @import url(https://fonts.googleapis.com/css?family=Pacifico&display=swap);
 
 body {
-    font-family: 'Maven Pro', sans-serif;
+    // font-family: 'Maven Pro', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 header {
@@ -29,16 +31,13 @@ header {
 }
 
 .banner {
-    background-image: url('../assets/banner.jpg');
+    // background-image: url('../assets/banner.jpg');
+    background-image: url('http://translogic.themerex.net/wp-content/uploads/2016/11/slide4-1.jpg');
     background-color: contain;
 }
 
 section {
     background-color: #fff;
-    &.banner {
-        background-image: url('../assets/banner.jpg');
-        background-size: cover;
-    }
     &.services, &.contact {
         background-color: #eee;
     }
@@ -56,8 +55,21 @@ section {
     .section-descp {
         padding: 0 25px 0 0;
         text-align: justify;
-        height: calc(100% - 70%);
+        height: calc(100% - 75%);
         overflow-y: scroll;
+        font-family: 'Poppins', sans-serif;
+        h3 {
+          font-size: 18px;
+          font-weight: 700;
+        }
+        h4 {
+          font-size: 16px;
+          font-weight: 500;
+        }
+        p {
+          font-size: 14px;
+          line-height: 23px;
+        }
         &::-webkit-scrollbar-track {
 	        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
 	        background-color: #F5F5F5;
@@ -99,6 +111,36 @@ section {
                 display: block;
             }
         }
+    }
+    &.out-rated {
+      .section-descp {
+        ul {
+          padding-left: 25px;
+          list-style-type: decimal;
+        }
+        .list-holder {
+          &.heading-holder {
+            font-weight: 700;
+          }
+          .name-list {
+            width: 50%;
+            display: inline-block;
+            vertical-align: top;
+          }
+          .per {
+            width: 20%;
+            display: inline-block;
+            vertical-align: top;
+            text-align: center;
+          }
+          .price {
+            width: 28%;
+            display: inline-block;
+            vertical-align: top;
+            text-align: center;
+          }
+        }
+      }
     }
 
 }
