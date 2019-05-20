@@ -110,6 +110,9 @@ section {
             span {
                 display: block;
             }
+            a {
+              color: #212529;
+            }
         }
     }
     &.out-rated {
@@ -139,6 +142,9 @@ section {
             vertical-align: top;
             text-align: center;
           }
+        }
+        h4 {
+          font-weight: 700;
         }
       }
     }
