@@ -29,13 +29,13 @@ header {
         margin-top: 0;
     }
 }
-
-.banner {
-    // background-image: url('../assets/banner.jpg');
-    background-image: url('http://translogic.themerex.net/wp-content/uploads/2016/11/slide4-1.jpg');
-    background-color: contain;
+// sliders
+.carousel-item {
+  img {
+    max-height: 100%;
+  }
 }
-
+// sliders end
 section {
     background-color: #fff;
     &.services, &.contact {
