@@ -92,6 +92,15 @@ section {
       ul {
         text-align: left;
       }
+      .hr-line {
+        position: absolute;
+        height: 60%;
+        left: 50%;
+        top: 50%;
+        width: 1px;
+        background-color: #989898;
+        transform: translate(-50%, -50%);
+      }
       .our-clients {
         h4 {
           margin-bottom: 25px;
